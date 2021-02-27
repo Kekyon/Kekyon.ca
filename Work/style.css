@@ -1,6 +1,22 @@
+.parallax {
+  /* The image used */
+  background-image: url("https://spark.adobe.com/page/58ykWzRqBJ0zs/images/dd0c5b24-4526-4c59-a191-653932baf64f.jpg?asset_id=99f8d904-586e-4b43-9298-d21bec86e550&img_etag=%2238f5c32804f9fe4a1829725e58fed26a%22&size=2560");
+
+  /* Set a specific height */
+  min-height: 740px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 body {
-	  
+  font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-style: italic;
+  margin: 0;
 }
 
 h1 { text-align: center;
@@ -9,7 +25,8 @@ h1 { text-align: center;
 
 }
 
-h2{ 
+h2{ font-size: 60px;
+	
 }
 
 
@@ -20,7 +37,7 @@ h3 {
 
 
 p {
-	
+
 }
 
 ul {
@@ -74,14 +91,15 @@ picture {
   box-sizing: border-box;
 }
 
-.row > .column {
-  padding: 0 8px;
+.row  .column {
+  padding: 3px;
 }
 
 .row:after {
   content: "";
   display: table;
   clear: both;
+	
 }
 
 .column {
