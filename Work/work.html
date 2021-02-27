@@ -6,7 +6,7 @@
 	
 </head>
 <body>
-		<div class="topnav">
+		<div id="navbar">
 	<a href="https://kekyon.ca/">Home</a>
 	<a href="https://kekyon.ca/dsgn1374/">Not Art</a>
 	<a href="https://twitter.com/Z2theabor">Twitter</a>
@@ -141,6 +141,19 @@
 
 
 <script>
+	window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+	
 function openModal() {
   document.getElementById("myModal").style.display = "block";
 }
@@ -177,7 +190,9 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
-</script>
+
+	
+	</script>
 </div>
 </body>
 </html>
