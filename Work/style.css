@@ -20,7 +20,7 @@ h3 {
 
 
 p {
-	t
+	
 }
 
 ul {
@@ -32,6 +32,28 @@ ul {
 li {
 	
 }
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #000000;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
 picture {
 	text-align: center;
 }
@@ -77,12 +99,12 @@ picture {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: black;
+  background-color: white;
 }
 
 .modal-content {
   position: relative;
-  background-color: #000000;
+  background-color: #ffffff;
   margin: auto;
   padding: 0;
   width: 53%;
@@ -90,7 +112,7 @@ picture {
 }
 
 .close {
-  color: white;
+  color: black;
   position: fixed;
   top: 10px;
   right: 25px;
@@ -100,7 +122,7 @@ picture {
 
 .close:hover,
 .close:focus {
-  color: #999;
+  color: grey;
   text-decoration: none;
   cursor: pointer;
 }
@@ -117,11 +139,11 @@ picture {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 0%;
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 20px;
   transition: 0.6s ease;
@@ -137,11 +159,11 @@ picture {
 
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .numbertext {
-  color: #000000;
+  color: #ffffff;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
@@ -154,9 +176,9 @@ img {
 
 .caption-container {
   text-align: center;
-  background-color: black;
+  background-color: white ;
   padding: 2px 16px;
-  color: white;
+  color: black;
 }
 
 .demo {
